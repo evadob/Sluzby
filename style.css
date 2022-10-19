@@ -41,11 +41,18 @@ p {
   padding-top: 60px;
 }
 
+hr {
+  width: 60px;
+  margin: auto;
+  border: 1px solid var(--primary-blue);
+  margin-bottom: 40px;
+}
+
 h1 {
   font-size: 28px;
   font-weight: 500;
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 h2 {
