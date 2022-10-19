@@ -1,0 +1,169 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --background-color: #fafafa; /* pozadi stranky */
+  --black: #000000; /* nadpisy */
+  --grey: #8b8b8b; /* paragraphs */
+  --primary-blue: #407bff; /* button a podtrzitko */
+  --light-blue: #407bff1f; /* borders */
+  --white: #ffffff; /* pozadi ramecku */
+}
+
+/* font-family: 'Montserrat', sans-serif; 
+light 300, regular 400, medium 500 */
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--background-color);
+}
+
+section {
+  max-width: 460px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+p {
+  text-align: center;
+}
+
+.hero img {
+  max-width: 350px;
+  display: block;
+  margin: auto;
+  padding-top: 60px;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 500;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.sluzby p {
+  font-size: 13px;
+  font-weight: 300;
+}
+
+button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+.buttons {
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  align-items: center;
+  margin: auto;
+}
+
+.btn-dobrodruzstvi {
+  background-color: var(--primary-blue);
+  color: var(--white);
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding: 8px 30px;
+  border-radius: 30px;
+  border: none;
+}
+
+.btn-pohoda {
+  background-color: var(--grey);
+  color: var(--white);
+  margin-bottom: 10px;
+  padding: 8px 20px;
+  border-radius: 30px;
+  border: none;
+}
+
+.cestovka > p,
+.delegati > p {
+  margin-bottom: 30px;
+}
+
+.sluzba {
+  background-color: var(--white);
+  min-height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.delegati {
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 640px) {
+  section {
+    max-width: 900px;
+  }
+
+  .hero > p,
+  .cestovka > p,
+  .delegati > p {
+    max-width: 580px;
+    margin: 0 auto;
+  }
+
+  .cestovka > p,
+  .delegati > p {
+    margin-bottom: 30px;
+  }
+
+  .hero img {
+    max-width: 400px;
+  }
+
+  .buttons {
+    flex-direction: row;
+    justify-content: space-around;
+    min-width: 435px;
+  }
+  .btn-pohoda {
+    margin-top: 30px;
+  }
+
+  .sluzby {
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+  }
+
+  .sluzba {
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 0;
+    min-height: 180px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+}
