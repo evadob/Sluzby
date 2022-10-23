@@ -106,8 +106,8 @@ button {
   border: none;
 }
 
-.cestovka > p,
-.delegati > p {
+.cestovka-popis > p,
+.delegati-popis > p {
   margin-bottom: 30px;
 }
 
@@ -132,11 +132,16 @@ button {
     max-width: 900px;
   }
 
-  .hero > p,
-  .cestovka > p,
-  .delegati > p {
+  .hero-p,
+  .cestovka-popis > p,
+  .delegati-popis > p {
     max-width: 580px;
     margin: 0 auto;
+  }
+
+  .cestovka-popis > p,
+  .delegati-popis > p {
+    padding-bottom: 30px;
   }
 
   .cestovka > p,
@@ -173,4 +178,78 @@ button {
 }
 
 @media screen and (min-width: 1100px) {
+  section {
+    max-width: 1040px;
+  }
+
+  .hero {
+    display: flex;
+    gap: 60px;
+  }
+
+  .left-side {
+    margin-top: 60px;
+  }
+
+  .hero img {
+    max-width: 425px;
+    order: 2;
+  }
+
+  hr {
+    margin: 0 0 30px 0;
+  }
+
+  .left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+  }
+
+  .buttons {
+    margin-left: 0;
+  }
+
+  .btn-dobrodruzstvi,
+  .btn-pohoda {
+    margin-top: 0;
+  }
+
+  .cestovka {
+    display: flex;
+    margin-top: 80px;
+    gap: 60px;
+  }
+
+  .delegati {
+    display: flex;
+    margin-top: 80px;
+    gap: 60px;
+  }
+
+  .cestovka-popis {
+    order: 2;
+    max-width: 430px;
+  }
+
+  .hero p,
+  .cestovka-popis p,
+  .cestovka-popis h2 {
+    text-align: left;
+  }
+
+  .delegati-popis {
+    max-width: 430px;
+  }
+
+  .delegati-popis p,
+  .delegati-popis h2 {
+    text-align: left;
+  }
+
+  .sluzby {
+    max-width: 530px;
+    margin: 0;
+  }
 }
