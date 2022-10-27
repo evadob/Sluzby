@@ -15,9 +15,6 @@
   --white: #ffffff; /* pozadi ramecku */
 }
 
-/* font-family: 'Montserrat', sans-serif; 
-light 300, regular 400, medium 500 */
-
 body {
   font-family: "Montserrat", sans-serif;
   background-color: var(--background-color);
@@ -253,7 +250,3 @@ button {
     margin: 0;
   }
 }
-
-/* verze 3 - jen abych mohla prejmenovat commit,
-protoze verze 2 vznikla omylem tak, ze kocicka slapla
-na enter :D */
